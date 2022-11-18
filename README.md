@@ -1,3 +1,28 @@
+## TUTORIAL INSTALL/RUN PROJECT LARAVEL RESEPKU
+
+(Laravel 9 PHP Version : PHP 8.1.10 (cli)) <br>
+Requirement sebelum instalasi :
+1. Composer
+2. XAMPP (include PHP)
+3. Same or higher version of PHP
+
+Cara Instalasi Project Laravel RESEPKU
+
+1. Buat folder untuk penempatan file laravel (nama bebas ex. resepku). Lalu masuk kedalam folder kosong tersebut.
+2. Buka CMD dalam folder tersebut dan jalankan perintah " git clone https://github.com/Bima1301/resepku.git " (tanpa tanda petik).
+3. Maka akan terdapat folder dengan nama "resepku". Jika terjadi eror pastikan untuk cek versi PHP apakah sudah sama atau belum.
+4. Setelah proses clone selesai. Selanjutnya adalah run perintah " cd resepku " lalu run lagi perintah " composer intall " pada CMD.
+5. Jalankan software XAMPP dan lakukan Start pada Apache dan MySQL.
+6. Copy file " .env.example" dan paste pada tempat yang sama, setelah itu ubah nama menjadi " .env ". Buka file " .env" tersebut dan lakukan konfigurasi didalamnya seperti database, nama aplikasi, dsb.<br>
+Note : buat database baru terlebih dahulu dengan nama yang sama yang terdapat pada file .env
+6. Jalankan perintah " php artisan config:cache " setiap kali ada perubahan pada file " .env" .
+8. Selanjutnya adalah melakukan migrasi database dengan menjalankan perintah " php artisan migrate " .
+9. Jalankan perintah " php artisan key:generate ", lalu jalankan perintah " php artisan config:cache " lagi.
+10. Lalu jalankan perintah " npm install ", selanjutnya jalankan perintah " npm run dev " (jangan tutup CMD).
+11. Buka CMD baru pada folder berisi berkas file project dan jalankan perintah " php artisan serve " .
+12. Buka link project yang tersedia ke browser (biasanya http://127.0.0.1:8000).
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

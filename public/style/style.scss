@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+// NAVBAR
+nav{
+    background-color: #547794;
+    .btn-logout{
+        background: none;
+        color: white;
+        border: none;
+        padding: 0;
+        outline: inherit;
+    }
+} 
+// END NAVBAR 
+
+// FOOTER
+footer{
+    position: static;
+    bottom: 0;
+    background-color: #C4C4C4;
+    width: 100%;
+}
+// END FOOTER
